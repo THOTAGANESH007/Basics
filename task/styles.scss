@@ -1,0 +1,344 @@
+// Variables
+$primary: #4294e3;
+$secondary: #8f12fd;
+$light: #f0f6ff;
+$dark: #0f172b;
+$dark-grey: #6c757d;
+
+// Global Styles
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+  color: $dark-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  font-weight: 700;
+}
+
+// Reusable Components
+.btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, $primary, $secondary);
+  background-size: 200% auto;
+  color: white;
+
+  &:hover {
+    background-position: right center;
+    color: white;
+  }
+}
+.btn-primary-gradient {
+  @extend .btn-primary;
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border: 2px solid $primary;
+  background-color: transparent;
+  &:hover {
+    color: white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+.logo-text {
+  background-image: linear-gradient($primary, $secondary);
+  color: transparent;
+  // -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.text-primary-gradient {
+  @extend .logo-text;
+}
+
+.section-title {
+  max-width: 600px;
+  h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+}
+
+.section-tag {
+  color: $primary;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+// Section Specific Styles
+
+// Navbar
+#navbar {
+  .nav-link {
+    font-weight: 600;
+    color: $dark;
+    padding: 8px 15px !important;
+    &.active,
+    &:hover {
+      color: $primary;
+    }
+  }
+  .btn {
+    padding: 8px 25px;
+  }
+}
+
+// Hero Section
+#hero {
+  // background: linear-gradient(rgba($primary, 0.9), rgba($secondary, 0.9));
+  background-color: #4294e3;
+  color: #fff;
+  padding-top: 100px; // Offset for fixed navbar
+  h1,
+  p {
+    color: #fff;
+  }
+  .hero-image {
+    max-width: 400px;
+    // animation: float 3s ease-in-out infinite;
+  }
+}
+
+// @keyframes float {
+//   0% {
+//     transform: translateY(0px);
+//   }
+//   50% {
+//     transform: translateY(-20px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }
+
+// Sections with Light Background
+#features,
+#how-working,
+#pricing,
+#touch {
+  background-color: $light;
+}
+
+// About Section
+#about {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+// Features Section
+#features {
+  .feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    }
+  }
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, $primary, $secondary);
+  }
+}
+
+// How It Works Section
+
+// #features {
+//   .feature-card {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//     &:hover {
+//       transform: translateY(-10px);
+//       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+//     }
+//   }
+//   .feature-icon {
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//   }
+// }
+
+#how-working {
+  .step-card {
+    border-radius: 10px;
+    position: relative;
+  }
+  .step-icon {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, $primary, $secondary);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px; // Pulls icon above the card
+    border: 5px solid #fff;
+  }
+}
+
+// Download Section
+#download .btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  padding-right: 2.5rem;
+}
+
+// Pricing Section
+#pricing {
+  .btn-group .btn {
+    border-radius: 50px !important;
+    padding: 10px 30px;
+    background: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    &.active {
+      background: linear-gradient(to right, $primary, $secondary);
+      color: #fff;
+    }
+  }
+  .input-group {
+    text-align: center;
+    padding-left: 12.5rem;
+  }
+  .pricing-card {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &.featured {
+      border-color: $primary;
+      box-shadow: 0 0.5rem 1rem rgba($primary, 0.15);
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    }
+    .small-num {
+      font-size: 22px;
+    }
+    .small-month-year {
+      font-size: 16px;
+    }
+  }
+}
+
+// Testimonials Section
+#clients {
+  .testimonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #fff;
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $secondary;
+    opacity: 0.5;
+    &.active {
+      opacity: 1;
+      background-color: $primary;
+    }
+  }
+}
+
+// Contact Section
+#touch {
+  .form-control {
+    min-height: calc(3rem + 2px);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border-color: #ced4da;
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+    }
+  }
+  textarea.form-control {
+    border-radius: 10px;
+  }
+  p {
+    max-width: 800px;
+  }
+}
+
+// Footer
+#footer {
+  background-color: $dark;
+  color: rgba(255, 255, 255, 0.7);
+  h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .footer-links li {
+    padding-bottom: 0.5rem;
+  }
+  .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-right: 5px;
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+}
