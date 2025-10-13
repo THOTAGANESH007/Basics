@@ -1,0 +1,10 @@
+$var: blue;
+
+.variable{
+    color: $var;
+}
+
+@import 'nav_Day_6';
+@import 'mixins_Day_6';
+@import 'prop_Day_6';
+@import 'function';

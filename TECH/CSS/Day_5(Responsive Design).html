@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport Meta Tag for responsive behavior -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Design</title>
+  <link rel="stylesheet" href="Day_5(Responsive Design).css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  <div>
+    <h4 class="head">1. The Viewport Meta Tag:</h4>
+    <p>
+      The viewport is the user's visible area of a web page. To ensure your
+      website is displayed correctly on different devices, you need to include
+      the viewport meta tag in the <b>"head"</b> of your HTML document Why
+      it's essential: Without the viewport tag, mobile browsers will render
+      the page at a typical desktop screen width and then scale it down,
+      making it difficult to read without zooming.
+    </p>
+    <p>
+      width=device-width: This sets the width of the page to follow the
+      screen-width of the device.
+    <p> initial-scale=1.0: This sets the initial
+      zoom level when the page is first loaded by the browser.</p>
+    </p>
+  </div>
+
+  <div>
+    <h4>2. CSS Media Queries</h4>
+    <p>
+      Media queries are a feature of CSS3 that allow you to apply styles based on the characteristics of the device,
+      such as its width, height, or orientation. They are the cornerstone of responsive design.
+      Syntax: "@media media-type and (media-feature) {
+      /* CSS rules go here */
+      }"
+      A media query consists of a media type (e.g., screen, print) and can include one or more media features (e.g.,
+      min-width, max-width,orientation).
+    </p>
+  </div>
+  <div>
+    <h4>Mobile-First Design</h4>
+    <p>In this approach, you design for the smallest screen first and then add more features and a more complex layout
+      for larger screens. This is also known as progressive enhancement.
+      How it's done: You write your base CSS for mobile devices and then use min-width media queries to add styles for
+      tablets and desktops.
+      Advantages:
+      Focuses on the essential content for all users.
+      Often leads to better performance on mobile devices.
+      Aligns with the trend of increasing mobile internet usage.</p><br>
+    <h4>Desktop-First Design</h4>
+    <p>This is the traditional approach where you design for a large desktop screen and then adapt the layout for
+      smaller screens. This is also called graceful degradation.
+      How it's done: You write your base CSS for desktops and then use max-width media queries to simplify the layout
+      for tablets and mobile devices.
+      Advantages:
+      Can be better suited for websites with a lot of data or complex features that are primarily used on desktops.</p>
+  </div>
+  <div>
+    background-size:content, 100% 100%, cover
+
+    <picture>
+      <source srcset="HTML/images/favicon.png" media="(max-width: 700px)">
+      <source srcset="HTML/images/rahul.jpeg">
+      <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </div>
+  <!-- <div class="image"></div> -->
+  <div>
+    <!-- <div>Logo</div> -->
+    <nav class="nav-container">
+      <img src="HTML/images/rahul.jpeg" alt="rahul">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <!-- </div> -->
+  </div>
+
+
+  <div class="container">
+    <main class="content">
+      <h2>Main Content</h2>
+      <p>
+        This is the main content area. On mobile devices, this will take up
+        the full width. On larger screens, a sidebar will appear next to it.
+      </p>
+    </main>
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>This is the sidebar. It is hidden on small screens to save space.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+
+</html>

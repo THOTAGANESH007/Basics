@@ -1,0 +1,49 @@
+h1:hover {
+    color: aqua;
+    font-size: 50px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 90px;
+    border-width: 5px;
+}
+
+h1 {
+    margin-top: auto;
+    text-align: center;
+}
+
+#team {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.image-popup-trigger {
+    position: relative;
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-image {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    /* Position it below the anchor tag */
+    left: 0;
+    z-index: 999;
+    /* Ensure it appears above other content */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background-color: white;
+    max-width: 200px;
+    height: auto;
+}
+
+.image-popup-trigger:hover .popup-image {
+    display: block;
+    /* Show the image on hover */
+}

@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(223, 122, 6);
+}
+
+#assignment-instructions{
+    color:blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ol > li:nth-child(2) > code{
+    color:green;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+code{
+    /* font-family: monospace; */
+    font-family: inherit;
+    color: red;
+}
+
+ol[type="1"]::marker{
+    color: pink;
+}
+
+ol > li:first-child{
+    background-color: blue;
+    color: white;
+}
+
+ol > li {
+    background-color: black;
+    color:white;
+    margin-bottom: 10px;
+}
+

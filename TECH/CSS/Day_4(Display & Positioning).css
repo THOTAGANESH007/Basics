@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Distance between the lines */
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+h1, h2 {
+    color: rgb(212, 121, 205);
+    border-bottom: 2px solid #ece253;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+h1{
+    position: sticky;
+    top:0;
+    /* bottom: 0; */
+    background-color: #ece253;
+    border-radius: 70px;
+    width:70%;
+    border: 1px solid black;
+    padding: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #3498db;
+}
+
+/* --- Display Properties --- */
+.display-section {
+    border: 1px dashed red;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.block {
+    background-color: #e74c3c;
+}
+
+.inline {
+    background-color: #3498db;
+    /* Width and height will not be applied to inline elements, to fix this we had to use display:inline-block*/
+    width: 200px;
+    height: 100px;
+}
+
+.inline-block {
+    background-color: #2ecc71;
+    width: 200px;
+    height: 100px;
+}
+
+.none {
+    display: none;
+    background-color: black;
+}
+
+/* --- Positioning Properties --- */
+.position-container {
+    border: 2px solid #9b59b6;
+    padding: 20px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.static-base {
+    background-color: #bdc3c7;
+}
+
+.relative {
+    position: relative;
+    /* top: 100px; */
+    left: 0px;
+    /* right: 200px; */
+    /* bottom: 100%;; */
+    background-color: #8e44ad;
+}
+
+.relative-parent {
+    position: relative; /* This is the positioning context for the absolute child */
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background-color: #e67e22;
+    width: 150px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1abc9c;
+    width: 150px;
+    z-index: 900; /* High z-index to stay on top */
+}
+
+.sticky-container {
+    height: 650px;
+    border: 2px solid #9b59b6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f39c12;
+}
+
+/* --- Z-Index --- */
+.z-index-container {
+    position: relative;
+    height: 270px;
+    border: 2px solid #9b59b6;
+    margin-top: 30px;
+}
+
+.z-box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.one {
+    background-color: rgba(231, 76, 60, 0.8);
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.two {
+    background-color: rgba(52, 152, 219, 0.8);
+    top: 30px;
+    left: 50px;
+    z-index: 2;
+}
+
+.three {
+    background-color: rgba(46, 204, 113, 0.8);
+    top: 50px;
+    left: 90px;
+    z-index: 1;
+}

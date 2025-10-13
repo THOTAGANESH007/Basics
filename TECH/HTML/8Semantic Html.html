@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML Example</title>
+    <link rel="stylesheet" href="Semantic Html.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>My Semantic Webpage</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- ARTICLE SECTION -->
+      <section id="articles" aria-label="Latest Articles">
+        <article>
+          <h2>Understanding Semantic HTML</h2>
+          <img
+            src="semantic-html.png"
+            alt="Illustration of semantic HTML structure"
+          />
+          <p>
+            Semantic HTML elements clearly describe their meaning in a human-
+            and machine-readable way. Examples include
+            <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>,
+            <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.
+          </p>
+        </article>
+
+        <article>
+          <h2>Why Accessibility Matters</h2>
+          <p>
+            Adding <strong>alt text</strong> for images and
+            <strong>aria attributes</strong> helps screen readers and improves
+            the web experience for everyone.
+          </p>
+          <button aria-label="Learn more about accessibility">
+            Learn More
+          </button>
+        </article>
+      </section>
+
+      <!-- ASIDE (SIDEBAR) -->
+      <aside aria-label="Related Links">
+        <h3>Related Topics</h3>
+        <ul>
+          <li><a href="#html5">HTML5 Features</a></li>
+          <li><a href="#css">CSS Basics</a></li>
+          <li><a href="#forms">Forms & Accessibility</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        &copy; 2025 My Semantic Website |
+        <a href="#privacy" style="color: white">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>

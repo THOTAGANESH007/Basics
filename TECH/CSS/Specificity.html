@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="Specificity.css">
+</head>
+<body>
+    <p>This is normal text.(default)(0001)</p>
+    <p class="highlight">This is class-based text.(0010)</p>
+    <p id="special" class="highlight">This is ID-based text. (Dominated by the id) (0100 > 0010)</p>
+    <p style="color:black;">This is inline style text.(1000)</p>
+
+</body>
+</html>

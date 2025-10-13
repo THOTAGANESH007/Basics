@@ -1,0 +1,21 @@
+        /* Element Selector (specificity = 0,0,0,1) */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector (specificity = 0,0,1,0) */
+        .highlight {
+            color: green;
+        }
+
+        /* ID Selector (specificity = 0,1,0,0) */
+        #special {
+            color: red;
+        }
+
+        /* Inline Style (specificity = 1,0,0,0) */
+
+
+        *{
+            background-color: orange;
+        }

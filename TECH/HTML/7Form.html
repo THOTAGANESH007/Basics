@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="7Form.css" />
+</head>
+
+<body>
+    <form action="/submit" method="POST">
+        <h2>Registration Form</h2>
+
+        <!-- Text Field -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required />
+        </div>
+
+        <!-- Gender (Radio Buttons) -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Female" /> Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Other" /> Other</label
+          >
+        </div>
+      </div>
+
+      <!-- Skills (Checkboxes) -->
+      <div class="form-group">
+        <label>Skills:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="skills" value="HTML" /> HTML</label
+          >
+          <label><input type="checkbox" name="skills" value="CSS" /> CSS</label>
+                    <label><input type="checkbox" name="skills" value="JS" />
+            JavaScript</label
+          >
+        </div>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="form-group">
+        <label for="country">Select Country:</label>
+                    <select id="country" name="country" required>
+          <option value="">-- Choose --</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+        </select>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required />
+                </div>
+
+                <!-- Range Slider -->
+                <div class="form-group">
+                    <label for="experience">Experience (in years):</label>
+                    <input type="range" id="experience" name="experience" min="0" max="20" value="5" oninput="expOutput.value = experience.value" />
+                    <output id="expOutput">5</output>
+                </div>
+
+                <!-- File Upload -->
+                <div class="form-group">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+                </div>
+
+                <!-- Text Area -->
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Write something here..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Form</button>
+    </form>
+</body>
+
+</html>

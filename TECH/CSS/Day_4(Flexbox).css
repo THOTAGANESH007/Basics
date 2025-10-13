@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /*It creates space between the edges of the browser window and the content of the webpage. */
+    background-color: #f4f4f4;
+}
+
+.fire {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #e9aaaa;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    /* border:10px; */
+}
+
+/* nav a:hover{
+    background-color: rgba(67, 67, 80, 0.336);
+} */
+
+/*Styling anchor tag */
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: overline;
+}
+
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: overline;
+}
+
+/* .anchor{
+    border: 2px solid blue;
+    background-color: blue;
+} */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    position: sticky;
+    bottom: 0;
+    /* bottom: auto; */
+    /* width: 100%; */
+}
+
+/* Flex Container */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    /* align-items: stretch; */
+    flex-wrap: wrap;
+}
+
+/* Flex Items */
+.flex-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis */
+    flex: 1 1 300px;
+}
+
+.flex-item h3 {
+    margin-top: 0;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+    .flex-container {
+        /* Change the justification for a different look on tablets */
+        justify-content: center;
+    }
+
+    .flex-item {
+        /* Adjust the basis to allow for two columns */
+        flex-basis: 40%;
+    }
+}
+
+/* For screens smaller than 600px (like mobile phones), stack the items vertically */
+@media (max-width: 600px) {
+    .flex-container {
+        /* Change the main axis to be vertical */
+        flex-direction: column;
+
+        /* Align items to the center of the container, which is now horizontal */
+        align-items: center;
+    }
+
+    .flex-item {
+        /* Ensure items take up most of the width */
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}

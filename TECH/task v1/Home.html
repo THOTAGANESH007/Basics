@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="../mini/images/favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section id="navbar">
+    <nav class="navbar navbar-inverse navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand display-1 fs-1 m-0 logo-text" href="#">FitApp</a>
+          <ul class="navbar-nav mx-auto mb-2 p-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="btn btn-primary-gradient">Start Free Trail</div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="container-fluid mt-5">
+      <div class="row m-3 pt-5">
+        <div class="col-lg-8 col-md-12 text-center pt-5 my-5 px-5">
+          <h1 class="mb-4">The Revolutionary App That Helps To Control Your Own Fitness</h1>
+          <p class="pb-3">
+            Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet
+            dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
+            sit justo amet ipsum vero ipsum clita lorem
+          </p>
+          <div class="mx-auto">
+            <button class="btn btn-primary">Read More</button>
+            <button class="btn btn-primary">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12  pt-5">
+          <img src="images/Screenshot.png" class="img-fluid img-thumbnail center-block" alt="Fitness Image" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About App -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <span class="text-primary mb-2 d-inline-block">About FitApp</span>
+          <h1>#1 App For Your Fitness</h1>
+          <p>
+            Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
+            labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem
+            sit clita duo justo eirmod magna dolore erat amet
+          </p>
+          <div class="row">
+            <div class="col-sm-6 ">
+              <!-- we has to use js -->
+              <h2 class="counter" data-toggle="counter-up"><i class="fa-solid fa-gears text-primary"></i>1234</h2>
+              <span class="text-primary mb-2">Active Install</span>
+            </div>
+            <div class="col-sm-6 ">
+              <h2><i class="fa-solid fa-comments text-primary"></i>1234</h2>
+              <span class="text-primary mb-2">Clients Reviews</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary mt-sm-4 mb-sm-5">Read More</a>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="images/about.png" class="img-fluid rounded" alt="About FitApp" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About img in the small screens-->
+  <!-- <div class="container">
+     <img src="images/about.png" class=" mx-auto d-block" alt=""></div> -->
+  <!-- App Features -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="text-primary mb-2 d-inline-block">App Features</span>
+        <h2>Awesome Features</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="bg-light rounded p-4">
+            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+              style="width: 60px; height: 60px;">
+              <i class="fa fa-eye text-white fs-4"></i>
+            </div>
+            <h5 class="mb-3">High Resolution</h5>
+            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+              lorem.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center bg-light bg-opacity-75">
+            <div class="card-body">
+              <p><i class="fa-solid fa-layer-group text-primary fa-3x"></i></p>
+              <h5 class="card-title">
+                Retina Ready
+              </h5>
+              <p class="card-text">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center bg-light bg-opacity-75">
+            <div class="card-body">
+              <p><i class="fa-solid fa-pen-to-square fa-3x text-primary"></i></p>
+              <h5 class="card-title">
+                Editable Data
+              </h5>
+              <p class="card-text">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center bg-light bg-opacity-75">
+            <div class="card-body">
+              <p><i class="fa-solid fa-shield-halved fa-3x text-primary"></i></p>
+              <h5 class="card-title">
+                Fully Secured
+              </h5>
+              <p class="card-text">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center bg-light bg-opacity-75">
+            <div class="card-body">
+              <p><i class="fa-solid fa-cloud fa-3x text-primary"></i></p>
+              <h5 class="card-title">
+                Cloud Storage
+              </h5>
+              <p class="card-text">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center bg-light bg-opacity-75">
+            <div class="card-body">
+              <p><i class="fa-solid fa-mobile-screen-button fa-3x text-primary"></i></p>
+              <h5 class="card-title">
+                Fully Responsive
+              </h5>
+              <p class="card-text">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interface -->
+  <section id="interface">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <span class="text-primary mb-2">Screenshot</span>
+          <h1 class="my-3">User Friendly interface And Very Easy To Use
+            Fitness App</h1>
+          <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita
+            erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+          <ul class="my-4">
+            <li><i class="fas fa-check text-primary py-2"></i>Diam dolor diam ipsum et tempor sit</li>
+            <li><i class="fas fa-check text-primary py-2"></i>Aliqu diam amet diam et eos labore</li>
+            <li><i class="fas fa-check text-primary py-2"></i>Clita erat ipsum et lorem et sit</li>
+          </ul>
+
+          <button class="btn btn-primary">Read More</button>
+        </div>
+        <div class="col-lg-4">
+
+          <img src="images/Screenshot.png" class="img-fluid" alt="Fitness Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-working">
+    <div class="container py-5 px-lg-5">
+      <div class="text-center">
+        <span class="text-primary mb-2 d-inline-block">How It Works</span>
+        <h2>3 Easy Steps</h2>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center bg-light bg-opacity-75">
+              <i class="fa-solid fa-gear fa-5x text-primary install"></i>
+              <div class="card-body pb-3">
+                <h5 class="card-title">
+                  Install the App
+                </h5>
+                <p class="card-text">
+                  Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed
+                  stet
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center bg-light bg-opacity-75">
+              <div class="card-body">
+                <i class="fa-solid fa-user text-primary fa-5x profile"></i>
+                <h5 class="card-title">
+                  Setup Your Profile
+                </h5>
+                <p class="card-text">
+                  Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed
+                  stet
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center bg-light bg-opacity-75">
+              <div class="card-body">
+                <i class="fa fa-check text-primary fa-5x feature"></i>
+                <h5 class="card-title">
+                  Enjoy The Features
+                </h5>
+                <p class="card-text">
+                  Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed
+                  stet
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <img src="images/download.png" class="img-fluid" alt="Fitness Image" />
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <span class="text-primary mb-2 d-inline-block fs-5 text-gradient">Download</span>
+          <h1><b>Download The Latest Version Of Our App</b></h1>
+          <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit,
+            sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+          <button class="btn btn-primary w-auto mx-4">Available On<br><b>App Store</b></button>
+          <button class="btn btn-primary w-auto mx-4">Available On<br><b>Play Store</b></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#myContent" aria-expanded="false" aria-controls="myContent">
+  Toggle Content
+</button>
+
+<div class="collapse" id="myContent">
+  <div class="card card-body">
+    This content will be hidden/shown on click.
+  </div>
+</div> -->
+
+
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div class="container mt-4">
+      <div class="section-title text-center">
+        <span class="text-primary mb-2 d-inline-block fs-5 text-gradient">Pricing Plan</span>
+        <h1><b>Choose Your Plan</b></h1>
+        <!-- <button id="toggleMonthly" class="btn btn-primary my-3 mx-1" data-bs-toggle="collapse" data-bs-target="#myContent" aria-expanded="false" aria-controls="myContent" >Monthly</button>
+
+        <button id="toggleYearly" class="btn btn-primary my-3" data-bs-toggle="collapse" data-bs-target="#myContentY" aria-expanded="false" aria-controls="myContentY">Yearly</button> -->
+
+        <button id="toggleMonthly" class="btn btn-primary my-3">Monthly</button>
+        <button id="toggleYearly" class="btn btn-primary my-3">Yearly</button>
+
+      </div>
+      <!-- Monthly -->
+      <!-- <div class="collapse show" id="myContent"> -->
+      <div class="row" id="monthly">
+        <!-- Starter Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Starter Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>14.99
+                <small class="align-bottom small-month-year">/Month</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Advance Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Advance Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>24.99<small class="align-bottom small-month-year">/
+                  Month</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Premium Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Premium Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>34.99<small class="align-bottom small-month-year">/
+                  Month</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- Yearly -->
+      <!-- <div class="collapse" id="myContentY"> -->
+      <div class="row d-none" id="yearly">
+        <!-- Starter Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Starter Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>114.99<small class="align-bottom small-month-year">/
+                  Yearly</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Advance Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Advance Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>124.99<small class="align-bottom small-month-year">/
+                  Yearly</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Premium Plan -->
+        <div class="col-lg-4 p-2">
+          <div class="bg-light rounded">
+            <div class="border-bottom p-4 mb-4">
+              <h4 class="mb-1 text-gradient">Premium Plan</h4>
+              <span>Powerful &amp; Awesome Features</span>
+            </div>
+            <div class="p-4 pt-0">
+              <h1 class="mb-3">
+                <small class="align-top small-num">$</small>134.99<small class="align-bottom small-month-year">/
+                  Yearly</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>HTML5 &amp; CSS3</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i
+                  class="fa fa-check text-primary-gradient pt-1 text-gradient"></i></div>
+              <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section id="clients">
+    <div class="container mb-5 mt-4">
+      <div class="section-title text-center">
+        <span class="text-primary mt-3 mb-2 d-inline-block fs-5 text-gradient">Testimonial</span>
+        <h1 class="mb-4"><b>What Say Our Clients!</b></h1>
+      </div>
+      <div class="row d-flex flex-nowrap overflow-auto">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4"><img src="images/about.png" class="img-fluid img-thumbnail" alt="img"></div>
+                <div class="col-8">
+                  <h3>Client Name</h3>
+                  <p>Profession</p>
+                </div>
+              </div>
+              <p class="card-text mt-3">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et
+                lorem et sit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4"><img src="images/about.png" class="img-fluid img-thumbnail" alt="img"></div>
+                <div class="col-8">
+                  <h3>Client Name</h3>
+                  <p>Profession</p>
+                </div>
+              </div>
+              <p class="card-text mt-3">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et
+                lorem et sit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4"><img src="images/about.png" class="img-fluid img-thumbnail" alt="img"></div>
+                <div class="col-8">
+                  <h3>Client Name</h3>
+                  <p>Profession</p>
+                </div>
+              </div>
+              <p class="card-text mt-3">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et
+                lorem et sit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary">Left</button>
+        <button class="btn btn-primary">Right</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Get In Touch -->
+  <section id="touch">
+    <div class="container mb-5">
+      <div class="section-title text-center">
+        <span class="text-primary mb-2 d-inline-block fs-5 text-gradient">Contact Us</span>
+        <h1><b>Get In Touch!</b></h1>
+      </div>
+      <p class="mt-3 mb-3">The contact form is currently inactive. Get a functional and working
+        contact form with Ajax & PHP in a few <br>minutes. Just copy and paste the files, add a little code and you're
+        done. <a href="#"> Download Now.</a></p>
+
+      <div class="container w-75">
+        <form class="row g-3 mt-2">
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Name" required />
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required />
+          </div>
+          <div class="col-md-12">
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Subject" required />
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+          </div>
+
+          <div class="col-12 d-flex justify-content-center gap-3">
+            <button type="button" class="btn btn-primary">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="my-3">Address</h2>
+          <ul class="my-4">
+            <li class="pb-2">123 Street, New York, USA</li>
+            <li class="pb-2">+012 345 67890</li>
+            <li class="pb-2">info@example.com</li>
+            <li>
+              <div class="social-icons mb-3">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2 class="my-3">Quick Links</h2>
+          <ul class="my-4">
+            <li class="pb-2"><a href="" btn btn-link>AboutUs</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Contact </a></li>
+            <li class="pb-2"><a href="" btn btn-link>Privacy Policy</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Terms & Conditions</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Career</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2 class="my-3">Popular Links</h2>
+          <ul class="my-4">
+            <li class="pb-2"><a href="" btn btn-link>AboutUs</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Contact </a></li>
+            <li class="pb-2"><a href="" btn btn-link>Privacy Policy</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Terms & Conditions</a></li>
+            <li class="pb-2"><a href="" btn btn-link>Career</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h2 class="my-3">Newsletter</h2>
+          <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
+            ornare velit non vulpu</p>
+
+          <form class="row g-3">
+            <div class="col-md-12">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email" required />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Just to get the dark grid at the bottom -->
+  <footer class="footer position-relative bottom-0 bg-dark text-white py-4">
+  </footer>
+
+
+
+  <script>
+    const month = document.getElementById('monthly');
+    const yearly = document.getElementById('yearly');
+    const toggleMonth = document.getElementById('toggleMonthly');
+    const toggleYearly = document.getElementById('toggleYearly');
+
+    toggleMonth.addEventListener('click', () => {
+      month.classList.remove('d-none');
+      yearly.classList.add('d-none');
+    });
+
+    toggleYearly.addEventListener('click', () => {
+      yearly.classList.remove('d-none');
+      month.classList.add('d-none');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attribute Selectors</title>
+  <style>
+    /* 1. Any element with "title" attribute */
+    [title] {
+      border-bottom: 1px dotted gray;
+    }
+
+    /* 2. Exact match: type="text" */
+    input[type="text"] {
+      background-color: lightyellow;
+    }
+
+    /* 3. Starts with: href begins with https */
+    a[href^="https"] {
+      color: green;
+    }
+
+    /* 4. Ends with: src ends with .png */
+    img[src$=".png"] {
+      border: 2px solid red;
+    }
+
+    /* 5. Contains: href has "login" anywhere */
+    a[href*="login"] {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Attribute Selectors Demo</h2>
+
+  <p title="demo">This paragraph has a title attribute.</p>
+
+  <form>
+    <input type="text" placeholder="Text input"><br><br>
+    <input type="password" placeholder="Password input">
+  </form><br>
+
+  <p>
+    <a href="https://example.com">Secure Link</a> <br>
+    <a href="/user/login">Login Link</a><br>
+  </p>
+
+  <img src="cat.png" alt="Cat Image" width="100">
+  <img src="dog.jpg" alt="Dog Image" width="100">
+</body>
+</html>

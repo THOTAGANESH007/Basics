@@ -1,0 +1,19 @@
+table {
+  width: 80%;
+  /* border-collapse: collapse; removes double borders */
+  margin: auto;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+thead {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+tfoot {
+  background-color: #ddd;
+  font-style: italic;
+}

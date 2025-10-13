@@ -1,0 +1,40 @@
+#owl-demo .item{
+  background: #42bdc2;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* to remove slide effect  css */
+ .animated  {
+      -webkit-animation-duration : 0 ms  !important;
+      animation-duration : 0 ms  !important;
+      -webkit-animation-fill-mode : both  !important;
+      animation-fill-mode : both  !important;
+    }  
+    
+    
+    .fadeOut  {
+      -webkit-animation-name : fadeOut  ;
+      animation-name : fadeOut  ;
+    }  
+    @-webkit-keyframes  fadeOut  {
+      0% {
+        opacity : 0   ;
+      }  
+      100% {
+        opacity : 0   ;
+      }  
+    }
+    @keyframes  fadeOut  {
+      0% {
+        opacity : 0   ;
+      }  
+      100% {
+        opacity : 0   ;
+      }  
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Combinators.css">
+    <title>CSS Combinators</title>
+</head>
+<body>
+    <h2>CSS Combinators</h2>
+    <ol>
+        <!-- Adjacent Sibling -->
+        <li>
+            <h2>Adjacent Sibling (+)</h2>
+            <dl>
+                <dt><h3>Syntax: <code>h2 + p { color: red; }</code></h3></dt>
+                <dd>
+                    <p>• Elements share the same parent</p>
+                    <p>• Second element comes <b>immediately after</b> first element</p>
+                    <p>• Example:</p>
+                        <div class="adjacent-demo">
+                            <h2>Not applied</h2>
+                            <p>CSS applied</p>
+                            <h2>Not applied</h2>
+                            <h3>Not applied</h3>
+                            <p>Not applied</p>
+                            <h2>Not applied</h2>
+                            <p>CSS applied</p>
+                        </div>
+                </dd>
+            </dl>
+        </li>
+
+        <!-- General Sibling -->
+        <li>
+            <h2>General Sibling (~)</h2>
+            <dl>
+                <dt><h3>Syntax: <code>h2 ~ p { color: red; }</code></h3></dt>
+                <dd>
+                    <p>• Elements share the same parent</p>
+                    <p>• Second element comes <b>anywhere after</b> first element (not necessarily adjacent)</p>
+                    <p>• Example:</p>
+                    <div class="general-demo">
+                        <h2>Not applied</h2>
+                        <p>CSS applied</p>
+
+                        <h2>Not applied</h2>
+                        <h3>Not applied</h3>
+                        <p>CSS applied</p>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+
+        <!-- Child -->
+        <li>
+            <h2>Child (>)</h2>
+            <dl>
+                <dt><h3>Syntax: <code>div > p { color: red; }</code></h3></dt>
+                <dd>
+                    <p>• Second element is a <b>direct child</b> of first element</p>
+                    <p>• Example:</p>
+                    <div class="child-demo">
+                        <div>Not applied</div>
+                        <p>CSS applied</p>
+                        <div>Not applied</div>
+
+                        <article>
+                            <p>Not applied</p>
+                        </article>
+
+                        <p>CSS applied</p>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+
+        <!-- Descendant -->
+        <li>
+            <h2>Descendant (space)</h2>
+            <dl>
+                <dt><h3>Syntax: <code>div p { color: red; }</code></h3></dt>
+                <dd>
+                    <p>• Second element is a <b>descendant</b> (child, grandchild, etc.) of the first element</p>
+                    <p>• Example:</p>
+                    <div class="descendant-demo">
+                        <div>Not applied</div>
+                        <p>CSS applied</p>
+                        <div>Not applied</div>
+
+                        <article>
+                            <p>CSS applied</p>
+                        </article>
+
+                        <p>CSS applied</p>
+                    </div>
+                </dd>
+            </dl>
+        </li>
+    </ol>
+</body>
+</html>

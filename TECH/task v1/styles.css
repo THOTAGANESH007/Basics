@@ -1,0 +1,197 @@
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+}
+
+.btn {
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right top, #4294E3, #8F12FD);
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  border: none;
+  cursor: pointer;
+  transition: background-position 1s ease-in-out;
+}
+
+.btn:hover {
+  background-position: 100% 0%;
+}
+
+#navbar .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 1s ease;
+}
+#navbar .navbar .navbar-scroll {
+  background-color: blue;
+  -webkit-backdrop-filter: blur(10%);
+          backdrop-filter: blur(10%);
+}
+#navbar .btn {
+  border-radius: 50px;
+  padding: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#navbar .logo-text {
+  background-image: linear-gradient(#4294E3, #8F12FD);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+#hero img {
+  position: relative;
+  margin: 30px;
+  right: 0;
+}
+#hero .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  /* padding: 11.5rem 2rem 8rem; */
+  color: #fff;
+  background-color: rgba(0, 17, 255, 0.458);
+  /* overflow-y: hidden; */
+}
+.hero img {
+  border-radius: 40px;
+}
+.hero h1 {
+  padding: auto;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+  font-weight: 900 !important;
+}
+
+#features h5 {
+  text-align: start;
+}
+#features p {
+  text-align: justify;
+}
+#features i {
+  left: 0;
+}
+#features .card .bg-light {
+  background-color: #F0F6FF;
+}
+#features .card:hover {
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.196);
+  animation: moveUp 1s forwards;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#features .text-gradient {
+  background-image: linear-gradient(#4294E3, #8F12FD);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+#interface h1 {
+  text-align: justify;
+  word-spacing: 0px;
+}
+#interface p {
+  text-align: justify;
+}
+#interface ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#interface img {
+  border-radius: 5px;
+}
+
+#how-working h5 {
+  text-align: start;
+}
+#how-working p {
+  text-align: justify;
+}
+
+#download .btn {
+  border-radius: 5px;
+}
+
+#pricing ul {
+  list-style: none;
+  padding-left: 100px;
+}
+#pricing li {
+  text-align: justify;
+}
+#pricing .text-gradient {
+  background-image: linear-gradient(#4294E3, #8F12FD);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+#pricing i {
+  text-align: end;
+}
+#pricing .small-num {
+  font-size: 22px;
+  line-height: 45px;
+}
+#pricing .small-month-year {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+#clients img {
+  width: 100px;
+  height: 100px;
+}
+#clients p {
+  text-align: justify;
+}
+
+#touch p {
+  text-align: center;
+}
+#touch a {
+  text-decoration: none;
+}
+#touch input {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+}
+#touch textarea {
+  height: 150px;
+}
+
+#footer h2 {
+  text-align: justify;
+}
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer p {
+  text-align: justify;
+}/*# sourceMappingURL=styles.css.map */

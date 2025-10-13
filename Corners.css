@@ -1,0 +1,39 @@
+/* body{
+    position: relative;
+} */
+
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* top:20px; */
+    /* right:10px; */
+    border: 1px solid black;
+}
+.card1{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: aqua;
+}
+
+.card2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+}
+
+.card3{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: blue;
+}
+
+.card4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+}

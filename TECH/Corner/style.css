@@ -1,0 +1,31 @@
+.card1 {
+  border: 1px solid black;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.card2 {
+  border: 1px solid black;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.card3 {
+  border: 1px solid black;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.card4 {
+  border: 1px solid black;
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  float: right;
+}/*# sourceMappingURL=style.css.map */

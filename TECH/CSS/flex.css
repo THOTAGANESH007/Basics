@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: aqua;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  transition: width 2s, height 2s, background-color, transform 3s;
+}
+
+.flex-item {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.button:hover {
+  width: 2px;
+  height: 3px;
+  background-color: blanchedalmond;
+}/*# sourceMappingURL=flex.css.map */

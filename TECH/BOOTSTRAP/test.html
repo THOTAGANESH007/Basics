@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Collapse Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+            .color-swap-button {
+      position: relative; /* For positioning segments */
+      width: 150px;
+      height: 50px;
+      background: transparent; /* Or a base color */
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+
+    .color-segment {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      z-index: -1; /* Place segments behind the text */
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .top-left { background-color: red; top: 0; left: 0; }
+    .top-right { background-color: blue; top: 0; right: 0; }
+    .bottom-left { background-color: green; bottom: 0; left: 0; }
+    .bottom-right { background-color: yellow; bottom: 0; right: 0; }
+
+
+        .color-swap-button:hover .top-left { background-color: blue; }
+    .color-swap-button:hover .top-right { background-color: green; }
+    .color-swap-button:hover .bottom-left { background-color: yellow; }
+    .color-swap-button:hover .bottom-right { background-color: red; }
+    </style>
+</head>
+
+<body>
+        <button class="color-swap-button">
+      <span class="color-segment top-left"></span>
+      <span class="color-segment top-right"></span>
+      <span class="color-segment bottom-left"></span>
+      <span class="color-segment bottom-right"></span>
+      Hover Me
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

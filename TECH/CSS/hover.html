@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover to Display Div</title>
+  <style>
+    /* Container for the hover effect */
+    .hover-container {
+      position: relative;
+      display: inline;
+    }
+
+    /* The hidden div */
+    .hover-content {
+      display: none; /* Initially hidden */
+      position: absolute;
+      top: 100%; /* Position below the hovered element */
+      left: 0%;
+      background-color: #f9f9f9;
+      /* padding: 10px; */
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Show the div when hovering over the container */
+    .hover-container:hover .hover-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="hover-container">
+    <p>Hover over me </p>
+    <div class="hover-content">
+        <ul>
+            <li>gkj</li>
+            <li>hhjs</li>
+        </ul>
+    </div>
+  </div>
+</body>
+</html>

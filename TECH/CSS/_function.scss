@@ -1,0 +1,14 @@
+@function a_plus_b_whole_square($a,$b){
+    // $output: pow($a,2)+pow($b,2)+(2*$a*$b);
+    // @return $output;
+    @return pow($a,2)+pow($b,2)+(2*$a*$b);
+}
+
+.square{
+    color:black;
+    // background-color: aqua;
+    $a:0;
+    $b:0;
+    $result: a_plus_b_whole_square($a,$b);
+    content: '#{$result}';
+}

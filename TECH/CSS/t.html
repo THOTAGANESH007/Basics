@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Delay with Text</title>
+  <style>
+    /* Keyframes for animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Animated element */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: fadeIn 2s ease-in-out 5s forwards; /* 1s delay */
+    }
+
+    /* Text to show during delay */
+    .delay-text {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Hide text when animation starts */
+    .animated-box.animation-started ~ .delay-text {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-box"></div>
+  <p class="delay-text">Cool Rocky...</p>
+
+  <script>
+    // Add a class to hide the text when animation starts
+    const animatedBox = document.querySelector('.animated-box');
+    setTimeout(() => {
+      animatedBox.classList.add('animation-started');
+    }, 1000); // Match the animation delay
+  </script>
+</body>
+</html>

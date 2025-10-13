@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    height: 900px;
+    border-style: solid;
+    /* background-color: aqua; */
+}
+.parent{
+    border: 3px solid black;
+    margin: 34px;
+}
+
+.child-1{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    position: fixed;
+    width:calc(100% - 30px);
+    margin: 0px;
+    margin-top: 13px;
+    left: 13px;
+    top: 0px;
+    /* right:auto; */
+    outline-style: groove;
+    box-sizing: content-box;
+    /* overflow: hidden; */
+    /* text-align: justify; */
+}
+
+.child-2{
+    border: 2px solid black;
+    background-color: black;
+    background-image: url('https://www.w3schools.com/css/klematis4_big.jpg');
+    background-size: 150px;
+    background-repeat: repeat-x;
+    color:white;
+    margin:3px;
+    height: 200px;
+}
+
+.child-3{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    margin:2px;
+}
+
+.child-h1{
+    /* display: inline-block; */
+    text-align: right;
+    color: red;
+    position: top right;
+    margin:inherit;
+}

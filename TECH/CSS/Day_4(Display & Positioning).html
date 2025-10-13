@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display & Positioning</title>
+    <link rel="stylesheet" href="Day_4(Display & Positioning).css">
+</head>
+
+<body>
+
+    <h1>CSS Display Properties</h1>
+
+    <div class="display-section">
+        <h2>display: block</h2>
+        <div class="box block">Block 1</div>
+        <div class="box block">Block 2</div>
+    </div>
+
+    <div class="display-section">
+        <h2>display: inline</h2>
+        <span class="box inline">Inline 1</span>
+        <span class="box inline">Inline 2</span>
+        <span>A Quick Fox Jumps Over A Lazy Dog.</span>
+    </div>
+
+    <div class="display-section">
+        <h2>display: inline-block</h2>
+        <div class="box inline-block">Inline-Block 1</div>
+        <div class="box inline-block">Inline-Block 2</div>
+    </div>
+
+    <div class="display-section">
+        <h2>display: none</h2>
+        <div class="box">This is a visible box.</div>
+        <div class="box none">This box is hidden.</div>
+        <div class="box">This box appears after the hidden one.</div>
+    </div>
+
+    <h1>CSS Positioning Properties</h1>
+
+    <div class="position-container">
+        <h2>position: relative</h2>
+        <div class="box static-base">Static Base for Relative</div>
+        <div class="box relative">Relative</div>
+    </div>
+
+    <div class="position-container relative-parent">
+        <h2>position: absolute</h2>
+        <p>The element is positioned relative to its nearest positioned ancestor (an ancestor with position: relative,
+            absolute, or fixed). If no such ancestor exists, it is positioned relative to the viewport.</p>
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+
+    <div class="sticky-container">
+        <div class="box sticky">Sticky</div>
+    </div>
+
+    <h1>Z-Index Example</h1>
+    <div class="z-index-container">
+        <p style="text-align:center; margin-top: 1px;"><b>Stacking Order</b> of elements on the web page</p>
+        <div class="box z-box one">One (z-index: 1)</div>
+        <div class="box z-box two">Two (z-index: 2)</div>
+        <div class="box z-box three">Three (z-index: 1)</div>
+    </div>
+</body>
+
+</html>

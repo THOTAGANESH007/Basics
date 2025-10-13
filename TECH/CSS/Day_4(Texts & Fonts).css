@@ -1,0 +1,118 @@
+/* General body styling for better readability */
+body {
+    font-family: Arial, sans-serif; /* Default font for the page */
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #005A9C;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* --- Font Family --- */
+/* The font-family property specifies a prioritized list of fonts. [27] If the first font is not available, the next one is tried. [6] It's good practice to end the list with a generic font family like 'serif' or 'sans-serif'. [6] */
+.font-family-example {
+    font-family: cursive;
+}
+
+/* --- Font Size --- */
+/* The font-size property sets the size of the text. [11] It can be an absolute size (like px) or a relative size (like em or rem). [7, 17] */
+.font-size-example {
+    font-size: 20px;
+}
+
+/* --- Font Weight --- */
+/* The font-weight property specifies the boldness of the text. [3] It can be a keyword (like 'normal' or 'bold') or a numeric value from 100 to 900. [15] */
+.font-weight-example {
+    font-weight: bold;
+}
+
+
+/*Styling the fire storm*/
+.fire {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+li:first-child {
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    text-align: left; /*default*/
+    letter-spacing: normal; /*word-spacing*/
+    text-decoration-style: dashed;
+}
+
+li:nth-child(2) {
+    font-family: sans-serif;
+}
+
+li:nth-child(3) {
+    font-family: cursive;
+}
+
+li:nth-child(4) {
+    font-family: serif;
+}
+
+li:nth-child(5) {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --- Text Alignment --- */
+/* The text-align property specifies the horizontal alignment of text. [2] */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right; /*left is default*/
+}
+
+.text-align-justify {
+    text-align: justify; /* Stretches the lines so that each line has equal width [26] */
+}
+
+/* --- Spacing --- */
+/* The line-height property sets the space between lines of text. [34] */
+.line-height-example {
+    line-height: 3;
+}
+
+/* The letter-spacing property specifies the space between characters in a text. [34] Negative values are allowed. [34] */
+.letter-spacing-example {
+    letter-spacing: 2px;
+}
+
+.word-spacing-example{
+    word-spacing: 7px;
+    word-wrap: break-word; /*Applied when we used the block level elements*/
+}
+
+/* --- Text Decoration --- */
+/* The text-decoration property is a shorthand for text-decoration-line, text-decoration-color, text-decoration-thickness, and text-decoration-style. */
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through blue dotted 3px;
+    /* text-decoration-color: blue; */
+}
+
+.text-decoration-overline {
+    text-decoration: overline;
+}
+
+.text-decoration-combined {
+    text-decoration: underline overline line-through;
+}
+

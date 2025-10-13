@@ -1,0 +1,20 @@
+$color: black;
+$backgroundColor: aqua;
+$textColor: blue;
+
+.prop {
+    border: 2px solid $color;
+    background-color: $backgroundColor;
+    color: $textColor;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.prop:hover::after {
+    content:url('HTML/images/rahul.jpeg');
+    background-color: $color;
+    display: block; 
+    // height: 10px;   
+    // width: 100%;  
+}

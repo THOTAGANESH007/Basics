@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+    background: #f9f9f9;
+}
+
+
+div {
+    background: #f4f4f4;
+    /* border-style: dotted; */
+    padding:1px;
+    margin-right: 80%;
+    /* border-radius: 6px; */
+    /* overflow-x: auto; */
+}
+
+/* Adjacent Sibling */
+.adjacent-demo h2 + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* General Sibling */
+.general-demo h2 ~ p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Child Combinator */
+.child-demo > p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Descendant Combinator */
+.descendant-demo p {
+    color: red;
+    font-weight: bold;
+}

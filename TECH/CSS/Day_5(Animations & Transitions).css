@@ -1,0 +1,86 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.aru{
+  background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=w%2f1f1zot&id=3087C6083A661C35B468A627A6A8F24B7A43AD3E&thid=OIP.w_1f1zotGODf0WeyynzBPAAAAA&mediaurl=https%3a%2f%2fi.ytimg.com%2fvi%2f2p_LWwtCG2w%2foar2.jpg%3fsqp%3d-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB%26rs%3dAOn4CLAdgX3t5s2IJOl-pwpctCSAxK-Lpw&exph=720&expw=405&q=tomb+in+arundathi+film&FORM=IRPRST&ck=BD0822AFC3AF9A34055F15A202D18CCB&selectedIndex=43&itb=0');
+}
+
+/* --- 1. Transition and Transform on Hover --- */
+.transition-card {
+  /* Define the transition property for smooth changes */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.transition-card:hover {
+  /* Apply transformations on hover */
+  transform: scale(1.05) translateY(-10px);
+  background-color: #76c7c0;
+  color: white;
+}
+
+/* --- 2. Keyframe Animation --- */
+/* Define the keyframes for the pulsing effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.keyframe-card {
+  /* Apply the animation to the card */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+}
+
+/* --- 3. Multiple Transforms on Hover --- */
+.transform-card {
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.transform-card:hover {
+  /* Combine multiple transform functions */
+  transform: rotate(10deg) scale(1.1) skew(15deg);
+  background-color: #f8b195;
+  color: white;
+}

@@ -1,0 +1,7 @@
+@mixin transform($prop){
+    transform: rotate($prop);
+}
+
+.text{
+    @include transform(330deg);
+}

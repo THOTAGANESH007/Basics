@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Features</title>
+    <style>
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML5 Features</h1>
+
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="images/kgf.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <h2>Video</h2>
+    <video controls width="300">
+      <source src="images/gaayam.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Canvas (Empty)</h2>
+    <canvas width="300" height="150" style="border: 1px solid black">
+      Your browser does not support the canvas tag.
+    </canvas>
+
+    <h2>Scalable Vector Graphics(SVG)</h2>
+    <svg width="300" height="150" style="border: 1px solid black">
+      <circle cx="70" cy="75" r="50" fill="blue" />
+      <rect x="150" y="40" width="120" height="70" fill="green" />
+      <text x="160" y="85" font-size="16" fill="white">SVG</text>
+    </svg>
+
+    <h2>Local Storage Example</h2>
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" placeholder="Your name" />
+    <button onclick="saveName()">Save</button>
+    <p id="displayName"></p>
+
+    <h2>Geolocation Example</h2>
+    <button onclick="getLocation()">Show My Location</button>
+    <p id="locationOutput"></p>
+
+    <h1>Drag and Drop API</h1>
+    <p>Drag the image into the rectangle:</p>
+    <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <br />
+    <img id="img1" src="images/profile.jpg" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69" />
+
+    <script>
+        // --- Local Storage ---
+        if (localStorage.getItem("name")) {
+            document.getElementById("displayName").textContent =
+                "Hello, " + localStorage.getItem("name") + "!";
+        }
+
+        function saveName() {
+            const name = document.getElementById("username").value;
+            localStorage.setItem("name", name);
+            document.getElementById("displayName").textContent =
+                "Hello, " + name + "!";
+        }
+
+        // --- Geolocation ---
+        function getLocation() {
+            const output = document.getElementById("locationOutput");
+
+            if (!navigator.geolocation) {
+                output.textContent = "Geolocation is not supported by your browser.";
+                return;
+            }
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    output.textContent =
+                        "Latitude: " +
+                        position.coords.latitude +
+                        ", Longitude: " +
+                        position.coords.longitude;
+                },
+                () => {
+                    output.textContent = "Unable to retrieve your location.";
+                }
+            );
+        }
+
+        // --- Drag & Drop ---
+        function dragstartHandler(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function dragoverHandler(ev) {
+            ev.preventDefault();
+        }
+
+        function dropHandler(ev) {
+            ev.preventDefault();
+            const data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</body>
+
+</html>
