@@ -208,19 +208,20 @@ h6 {
 }
 
 #clients .testimonial-card {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   border: 1px solid #dee2e6;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f0f6ff;
 }
 #clients .testimonial-card img {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px solid #fff;
+  border: 2px solid #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
 }
 #clients .carousel-indicators [data-bs-target] {
   width: 12px;
@@ -308,4 +309,9 @@ h6 {
   align-content: center;
   justify-content: center;
   padding: 12px;
+}
+
+#test .card {
+  background-color: #f0f6ff;
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */
