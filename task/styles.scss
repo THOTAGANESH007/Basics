@@ -418,33 +418,34 @@ h6 {
 }
 
 
-#test{
-  .carousel-kosam{
-    // height:auto;
-    // flex: 0 0 auto;
-    animation: scroll 10s linear infinite;
+// #test{
+//   .carousel-kosam{
+//     // height:auto;
+//     // flex: 0 0 auto;
+//     // animation: scroll 10s linear infinite;
+//     transform: translateY(-50%);
 
-        // .card {
-      /* Your base card styles */
-      // }
-      &:hover{
-  // animation: slide-in 1s forwards;
-  animation-play-state: paused;
+//         // .card {
+//       /* Your base card styles */
+//       // }
+//       &:hover{
+//   // animation: slide-in 1s forwards;
+//   animation-play-state: paused;
 
-}
+// }
     
-  }
+//   }
 
-  @keyframes slide-in {
-      from { transform:scale(1) }
-      to { transform:scale(1.05); }
-    }
-  @keyframes scroll {
-    0%{
-      transform: translateX(0%);
-    }
-    100%{
-      transform: translateX(-100%);
-    }
-  }
-}
+//   @keyframes slide-in {
+//       from { transform:scale(1) }
+//       to { transform:scale(1.05); }
+//     }
+//   @keyframes scroll {
+//     0%{
+//       transform: translateX(0%);
+//     }
+//     100%{
+//       transform: translateX(-100%);
+//     }
+//   }
+// }

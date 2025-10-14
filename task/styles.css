@@ -308,28 +308,4 @@ h6 {
   align-content: center;
   justify-content: center;
   padding: 12px;
-}
-
-#test .carousel-kosam {
-  animation: scroll 10s linear infinite;
-  /* Your base card styles */
-}
-#test .carousel-kosam:hover {
-  animation-play-state: paused;
-}
-@keyframes slide-in {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }/*# sourceMappingURL=styles.css.map */
