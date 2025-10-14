@@ -96,6 +96,12 @@ h6 {
   font-size: 2.5rem;
 }
 
+.bhaai .navbar-scroll {
+  background-color: red;
+  -webkit-backdrop-filter: blur(20%);
+          backdrop-filter: blur(20%);
+}
+
 #hero {
   background-color: rgba(11, 14, 204, 0.733);
   color: #fff;
@@ -142,7 +148,6 @@ h6 {
 
 #how-working .step-card {
   border-radius: 10px;
-  position: relative;
 }
 #how-working .step-icon {
   display: flex;
