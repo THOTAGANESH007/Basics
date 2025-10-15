@@ -38,5 +38,12 @@ nav a {
 
 .square {
   color: black;
-  content: "0";
+  background-color: aqua;
+  font-size: 20px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid black;
+}
+.square::after {
+  content: "Result: 25";
 }/*# sourceMappingURL=Day_6(SCSS Overview).css.map */

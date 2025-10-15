@@ -1,14 +1,25 @@
-@function a_plus_b_whole_square($a,$b){
+@use 'sass:math';
+
+@function a_plus_b_whole_square($a, $b) {
     // $output: pow($a,2)+pow($b,2)+(2*$a*$b);
     // @return $output;
-    @return pow($a,2)+pow($b,2)+(2*$a*$b);
+    @return math.pow($a, 2)+math.pow($b, 2)+(2*$a*$b);
 }
 
-.square{
-    color:black;
+.square {
+    // color:black;
     // background-color: aqua;
-    $a:0;
-    $b:0;
-    $result: a_plus_b_whole_square($a,$b);
-    content: '#{$result}';
+    $a: 3;
+    $b: 2;
+    $result: a_plus_b_whole_square($a, $b);
+    color: black;
+    background-color: aqua;
+    font-size: 20px;
+    padding: 10px;
+    margin:auto;
+    border: 1px solid black;
+
+    &::after {
+        content: 'Result: #{$result}';
+    }
 }
