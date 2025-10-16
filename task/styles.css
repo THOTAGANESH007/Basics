@@ -212,14 +212,14 @@ h6 {
   color: white;
 }
 
-#clients .testimonial-card {
+#clients .testimonial-card, #clients #test .ext, #test #clients .ext, #test .ext .testimonial-card, #test .ext .ext {
   max-width: 400px;
   margin: 0 auto;
   border: 1px solid #dee2e6;
   border-radius: 10px;
   background-color: #f0f6ff;
 }
-#clients .testimonial-card img {
+#clients .testimonial-card img, #clients #test .ext img, #test #clients .ext img, #test .ext .testimonial-card img, #test .ext .ext img {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
@@ -228,14 +228,14 @@ h6 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 20%;
 }
-#clients .carousel-indicators [data-bs-target] {
+#clients .carousel-indicators [data-bs-target], #test .ext .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #8f12fd;
   opacity: 0.5;
 }
-#clients .carousel-indicators [data-bs-target].active {
+#clients .carousel-indicators [data-bs-target].active, #test .ext .carousel-indicators [data-bs-target].active {
   opacity: 1;
   background-color: #4294e3;
 }
@@ -314,6 +314,30 @@ h6 {
   align-content: center;
   justify-content: center;
   padding: 12px;
+}
+
+#test .carousel-kosam {
+  transform: translateY(-50%);
+  /* Your base card styles */
+}
+#test .carousel-kosam:hover {
+  animation-play-state: paused;
+}
+@keyframes slide-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 #test .card {
