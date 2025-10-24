@@ -296,7 +296,33 @@ show full tables;
 drop view avg_marks;
 
 
+select * from department;
+select distinct(deptName), sum(marks) over(partition by deptName)as marks_sum from department;
 
+select eName,deptName from department group by deptName order by eName,deptName;
+
+select  deptName,dense_rank() over(order by deptName) as ranking from department group by deptName;
+
+--	row_number() doesnot give the same values for the tied columns
+--	The problem with the rank() is it skips the tied values
+--	dense_rank() solves this issue
+
+
+select distinct eName, lead(marks) over() from department;  -- Returns the next value
+
+select distinct eName, lag(marks) over() from department;  -- Returns the previous value
+
+select distinct eName,deptName, first_value(marks) over(partition by deptName) from department;  -- Returns the first value
+
+select distinct eName, last_value(marks) over(partition by deptName) from department;  -- Returns the last value
+
+
+with avg_marks as(
+	select avg(marks) as avg__marks from department
+)
+select eName, deptName from department where marks > (select avg__marks from avg_marks);
+
+select * from avg_marks;
 
 
 
